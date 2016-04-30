@@ -5,7 +5,7 @@
  */
 var bedrock = require('bedrock');
 
-require('./lib/main');
+require('./lib');
 require('./configs/dev');
 
 // configure for tests

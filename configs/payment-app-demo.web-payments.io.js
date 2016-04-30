@@ -32,6 +32,9 @@ config.loggers.access.filename = path.join(
 config.loggers.error.filename = path.join(
   _logdir, 'payment-app-demo.web-payments.io-error.log');
 config.loggers.email.silent = true;
+config.loggers.app.bedrock.enableChownDir = true;
+config.loggers.app.bedrock.enableChownDir = true;
+config.loggers.error.bedrock.enableChownDir = true;
 
 // server info
 config.server.port = 443;

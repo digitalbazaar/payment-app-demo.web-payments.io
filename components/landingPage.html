@@ -15,7 +15,7 @@ for a parking spot (Internet of Things), etc. For more information, see the
 
 <p>
 If you just want to try the Web Payments HTTP API out, the
-<a href="http://http-mediator-demo.web-payments.io/">Payment Mediator Demo</a> 
+<a href="http://http-mediator-demo.web-payments.io/">Payment Mediator Demo</a>
 is probably the best place to start.
 </p>
 
@@ -26,12 +26,12 @@ the HTTP API, the following things may be of interest to you:
 
 <ul>
   <li>
-Setup a new payment app. Try <code>curl {{$root.app.config.data.baseUri}}/apps/legacy-card</code>
+Setup a new payment app. Try <code>curl {{$root.app.config.data.baseUri}}/apps</code>
   </li>
   <li>
 Submit a
 <a href="http://w3c.github.io/webpayments/proposals/core-messages/#paymentrequest">payment request</a>.
-Do an HTTP POST of a payment request to <code>{{$root.app.config.data.baseUri}}/apps/legacy-card/{your-payment-app-id}</code>.
+Do an HTTP POST of a payment request: <code>curl -v -X POST -H "Content-Type: application/json" -d @paymentRequest.json {{$root.app.config.data.baseUri}}/apps/{your-payment-app-id}</code>.
   </li>
 </ul>
 
